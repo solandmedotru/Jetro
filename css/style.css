@@ -264,3 +264,44 @@ nav.navbar ul a:hover {
 nav.navbar ul li:last-child a {
   padding-right: 0;
 }
+#slider {
+  position: relative;
+  margin-top: 10px;
+}
+#slider #background-strip {
+  background-color: #f3ae97;
+  height: 62px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 5;
+}
+#slider .container {
+  z-index: 10;
+  position: relative;
+  background: #fff;
+}
+#slider .carousel-indicators {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: static;
+  margin: 0;
+  margin-top: 17px;
+}
+#slider .carousel-indicators li {
+  border: 0;
+  width: 15%;
+  margin: 0;
+  height: auto;
+}
+#slider .carousel-indicators li img {
+  display: block;
+  width: 100%;
+}
+#slider .carousel-indicators li.active {
+  border: 2px solid #e8663c;
+  border-radius: 0;
+}
